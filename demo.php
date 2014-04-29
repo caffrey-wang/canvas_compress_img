@@ -16,11 +16,11 @@
                     console.log(response);
                     var parsedJson = $.parseJSON(response);
                     alert(parsedJson.image.id);
-                    var src='http://pic1.ajkimg.com/display/'+parsedJson.image.id+'/160x120.jpg';
+                    var src='http://demo.com/display/'+parsedJson.image.id+'/160x120.jpg';
                     var i=document.getElementById('img_big');
                     i.src=src;
                 }
-                var result =compressUpload(file,'http://upd1.ajkimg.com/upload',640,callback);
+                var result =compressUpload(file,'http://demo.com/upload',640,callback);
             });
         });
     </script>
